@@ -1,12 +1,5 @@
 #include <stdio.h>
-#include "Arduino.h"
-#include "configuration.h"
-#include "pins.h"
-#include "extruder.h"
-#include "vectors.h"
-#include "cartesian_dda.h"
-#include "FiveD_GCode_Interpreter.h"
-//#include <stdio.h>
+#include "fiveD_global.h"
 
 
 // Initialise X, Y and Z.  The extruder is initialized

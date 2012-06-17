@@ -12,13 +12,7 @@ http://objects.reprap.org/wiki/Mendel_User_Manual:_RepRapGCodes
 */
 
 
-#include "Arduino.h"
-#include "configuration.h"
-#include "pins.h"
-#include "extruder.h"
-#include "vectors.h"
-#include "cartesian_dda.h"
-#include "FiveD_GCode_Interpreter.h"
+#include "fiveD_global.h"
 #include "process_g_code.h"
 #include <string.h>
 

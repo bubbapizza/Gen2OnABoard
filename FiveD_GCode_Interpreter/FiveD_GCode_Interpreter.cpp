@@ -31,13 +31,8 @@ http://objects.reprap.org/wiki/Mendel_User_Manual:_RepRapGCodes
 #include <ctype.h>
 #include <HardwareSerial.h>
 #include <avr/pgmspace.h>
-#include "Arduino.h"
-#include "vectors.h"
-#include "configuration.h"
+#include "fiveD_global.h"
 #include "intercom.h"
-#include "pins.h"
-#include "extruder.h"
-#include "cartesian_dda.h"
 #include "FiveD_GCode_Interpreter.h"
 
 // Maintain a list of extruders...

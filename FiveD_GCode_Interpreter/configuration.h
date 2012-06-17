@@ -28,8 +28,7 @@
 #define MENDEL 1
 #define SLOTTED_PULLEYS 1
 
-//*********************************************************************************************
-
+//****************************************************************************
 // These settings are mainly for Darwin
 
 #if MOTHERBOARD < 2
@@ -50,8 +49,7 @@
 #define Y_ENDSTOP_INVERTING true
 #define Z_ENDSTOP_INVERTING true
 
-//**********************************************************************************************
-
+//****************************************************************************
 // These settings are mainly for Mendel
 
 #else
@@ -82,8 +80,7 @@
 
 #endif
 
-//**********************************************************************************************
-
+//*****************************************************************************
 // The speed at which to talk with the host computer; default is 19200
 
 #define HOST_BAUD 19200 // *RO
@@ -265,25 +262,25 @@ inline void resetTimer()
 //*************************************************************************
 
 #if 0
-// Green machine:
-//#define ENDSTOPS_INVERTING 0
-
-// parameters for the Bath U. mendel prototype
-#define X_STEPS_PER_MM   13.333333
-#define X_STEPS_PER_INCH (X_STEPS_PER_MM*INCHES_TO_MM)
-#define INVERT_X_DIR 0
-
-#define Y_STEPS_PER_MM   13.333333
-#define Y_STEPS_PER_INCH (Y_STEPS_PER_MM*INCHES_TO_MM)
-#define INVERT_Y_DIR 0
-
-// Green machine:
-#define Z_STEPS_PER_MM   944.88
-// Fat Z cog machine:
-//#define Z_STEPS_PER_MM   558.864
-// Standard Mendel:
-//#define Z_STEPS_PER_MM   833.398
-#define Z_STEPS_PER_INCH (Z_STEPS_PER_MM*INCHES_TO_MM)
-#define INVERT_Z_DIR 0
+   // Green machine:
+   //#define ENDSTOPS_INVERTING 0
+   
+   // parameters for the Bath U. mendel prototype
+   #define X_STEPS_PER_MM   13.333333
+   #define X_STEPS_PER_INCH (X_STEPS_PER_MM*INCHES_TO_MM)
+   #define INVERT_X_DIR 0
+   
+   #define Y_STEPS_PER_MM   13.333333
+   #define Y_STEPS_PER_INCH (Y_STEPS_PER_MM*INCHES_TO_MM)
+   #define INVERT_Y_DIR 0
+   
+   // Green machine:
+   #define Z_STEPS_PER_MM   944.88
+   // Fat Z cog machine:
+   //#define Z_STEPS_PER_MM   558.864
+   // Standard Mendel:
+   //#define Z_STEPS_PER_MM   833.398
+   #define Z_STEPS_PER_INCH (Z_STEPS_PER_MM*INCHES_TO_MM)
+   #define INVERT_Z_DIR 0
 
 #endif
