@@ -12,9 +12,9 @@ http://objects.reprap.org/wiki/Mendel_User_Manual:_RepRapGCodes
 */
 
 
+#include <string.h>
 #include "fiveD_global.h"
 #include "process_g_code.h"
-#include <string.h>
 
 /* bit-flags for commands and parameters */
 #define GCODE_G	(1<<0)
