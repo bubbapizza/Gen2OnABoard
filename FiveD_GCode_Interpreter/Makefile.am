@@ -24,7 +24,7 @@
 
 # Set the CPU type when compiling.
 FIRMWARE = fiveD
-AM_CXXFLAGS = -Wall -Os -mmcu=$(MMCU) -DF_CPU=$(MHZ)000000 -I $(includedir) -ffunction-sections
+AM_CXXFLAGS = -Wall -Os -mmcu=$(MMCU) -DF_CPU=$(MHZ)000000 -ffunction-sections
 
 
 # Instructions for building the executable file.
@@ -56,7 +56,7 @@ noinst_DATA = fiveD.hex
 .elf.hex :
 	$(STRIP) -s $<
 	$(OBJCOPY) -O ihex -j .text -j .data $< $@
-	@echo -e "\n\n--- Requires `$(OBJDUMP) -h $(FIRMWARE).elf | grep .bss | awk '{print "ibase=16 ; " toupper($$3) }' | bc` bytes of SRAM"
+	@echo -e "\n\n--- Requires `$(OBJDUMP) -h $< | grep .bss | awk '{print "ibase=16 ; " toupper($$3) }' | bc` bytes of SRAM"
 	@avr-size *.hex *.elf *.o
 
 
